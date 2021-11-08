@@ -34,4 +34,4 @@ Helper contains common contants and security fucntions.
 - Make sure you have entry in your *Account* db table with an email *abc@gmail.com*. Password will be encrypted in db but you can check *Seed-db class* for decrypted password.
 - Make an API hit by going to this url *https://localhost:5001/swagger/index.html*.
 - Try Out the *api/account/signin* by giving username and password that written in *Seed-db class*. In Response you will get access token. 
-- On Swagger index.html page click the Authorize button and add word *"Bearer <PUT YOUR RECENTLY GENERATED ACCESS TOKEN HERE>"*. It will allow you to make authroized call.
+- On Swagger index.html page click the Authorize button and add word *"Bearer PUT YOUR RECENTLY GENERATED ACCESS TOKEN HERE"*. It will allow you to make authroized call.
