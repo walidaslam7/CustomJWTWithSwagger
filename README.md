@@ -1,6 +1,6 @@
-# Custom Implementation of JWT and Swagger
+# Custom Implementation of JWT and Swagger in .NET5
 
-### This is custom n-tier, loose coupled backend web-api based application and the main purpose is to sample implementation of basic stuff like authtication and authorization using JWT strategy and Swagger with auth.
+### This is custom n-tier, loose coupled backend .NET5 web-api based application and the main purpose is to sample implementation of basic stuff like authtication and authorization using JWT strategy and Swagger with auth.
 
 
 ## Blogifier
