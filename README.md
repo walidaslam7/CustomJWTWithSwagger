@@ -25,3 +25,12 @@ Shared contains different generic models that are using through out application.
 Helper contains common contants and security fucntions.
 
 
+## Configuration
+
+- Appsettings.json contains the database connection string & sample keys (replace them with yours) for JWT. 
+- Open Package Manger Console and write command *add-migration v1 -o Data\Migrations* and hit enter so it will create another migration for databae snapshot.
+- Run *update-database* to create database in your SQL Server. Go to SQL Server to make sure is Database created with the name that you have written in your connection string.
+- Run the application by choosing *Blogifier* as your startup project.
+- Make sure you have entry in your *Account* db table with an email *abc@gmail.com*. Password will be encrypted in db but you can check *Seed-db class* for decrypted password.
+- Make an API hit by going to this url *https://localhost:5001/swagger/index.html*.
+-   
