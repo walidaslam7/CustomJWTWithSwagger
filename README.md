@@ -1,37 +1,37 @@
-# Custom Implementation of JWT and Swagger in .NET5
+# Custom Implementation of JWT and Swagger in.NET5
 
-### This is custom n-tier, loose coupled backend .NET5 web-api based application and the main purpose is to sample implementation of basic stuff like authtication and authorization using JWT strategy and Swagger with auth.
+### This is a custom n-tier, loosely coupled backend.NET5 web-api-based application and the main purpose is to sample implementation of basic stuff like authentication and authorization using JWT strategy and Swagger with auth.
 
 
 ## Blogifier
-Main start up Solution that contains middle ware and controllers.
+Main start-up Solution that contains middleware and controllers.
 
 ### Controllers
-Account controller contain all generic methods that are using to calling different operations.
+Account controllers contain all generic methods that are used to call different operations.
 
 ### Middle-Ware
-Start-up class contains all the registration of dependency injection, Context & binding with Services and Repos, implementaion of Seed-DB and Swagger stuff.
+The Start-up class contains all the registration of dependency injection, Context & binding with Services and Repos, implementation of Seed-DB, and Swagger stuff.
 
 ## Blogifier.Services
-Service project Contains the all business logics regarding account methods. Divided in several parts like Interface, Implementaion and private methods
+The service project Contains all business logic regarding account methods. Divided into several parts like Interface, implementation, and private methods
 
 ## Blogifier.Providers
-Providers contains Context, Migrations and Seed-DB for connecting to database
+Providers contain Context, Migrations, and Seed-DB for connecting to the database
 
 ## Blogifier.Shared
-Shared contains different generic models that are using through out application.
+Shared contains different generic models that are used throughout the application.
 
 ## Blogifier.Helpers
-Helper contains common contants and security fucntions.
+Helper contains common contents and security functions.
 
 
 ## Configuration
 
 - Appsettings.json contains the database connection string & sample keys (replace them with yours) for JWT. 
-- Open Package Manger Console and write command *add-migration v1 -o Data\Migrations* and hit enter so it will create another migration for databae snapshot.
-- Run *update-database* to create database in your SQL Server. Go to SQL Server to make sure is Database created with the name that you have written in your connection string.
+- Open Package Manager Console and write command *add-migration v1 -o Data\Migrations* and hit enter so it will create another migration for database snapshot.
+- Run *update-database* to create a database in your SQL Server. Go to SQL Server to make sure is Database created with the name that you have written in your connection string.
 - Run the application by choosing *Blogifier* as your startup project.
-- Make sure you have entry in your *Account* db table with an email *abc@gmail.com*. Password will be encrypted in db but you can check *Seed-db class* for decrypted password.
-- Make an API hit by going to this url *https://localhost:5001/swagger/index.html*.
-- Try Out the *api/account/signin* by giving username and password that written in *Seed-db class*. In Response you will get access token. 
-- On Swagger index.html page click the Authorize button and add word *"Bearer PUT YOUR RECENTLY GENERATED ACCESS TOKEN HERE"*. It will allow you to make authroized call.
+- Make sure you have an entry in your *Account* DB table with an email *abc@gmail.com*. Password will be encrypted in DB but you can check *Seed-DB class* for decrypted password.
+- Make an API hit by going to this URL *https://localhost:5001/swagger/index.html*.
+- Try Out the *API/account/sign in* by giving a username and password that are written in *Seed-DB class*. In Response, you will get an access token. 
+- On the Swagger index.html page click the Authorize button and add the word *" Bearer PUT you're RECENTLY GENERATED ACCESS TOKEN HERE"*. It will allow you to make an authorized call.
